@@ -1,0 +1,22 @@
+{
+  "themes": [
+    {
+      "id": "luminoso-saturado",
+      "name": "Luminoso saturado",
+      "description": "Diapositivas claras, con colores saturados.",
+      "downloadUrl": "https://raw.githubusercontent.com/consultora-grada/salmia-releases/main/themes/luminoso-saturado.zip"
+    },
+    {
+      "id": "luminoso",
+      "name": "Luminoso",
+      "description": "Diapositivas claras.",
+      "downloadUrl": "https://raw.githubusercontent.com/consultora-grada/salmia-releases/main/themes/luminoso.zip"
+    },
+    {
+      "id": "oscuro",
+      "name": "Oscuro",
+      "description": "Diapositivas oscuras.",
+      "downloadUrl": "https://raw.githubusercontent.com/consultora-grada/salmia-releases/main/themes/oscuro.zip"
+    }
+  ]
+}
