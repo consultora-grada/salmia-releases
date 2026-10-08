@@ -1,0 +1,24 @@
+{
+  "presentation": [
+    {
+      "id": "luminoso-saturado",
+      "name": "Luminoso saturado",
+      "description": "Diapositivas claras, con colores saturados.",
+      "downloadUrl": "https://raw.githubusercontent.com/consultora-grada/salmia-releases/main/shared/themes/presentation/Luminoso%20saturado.salmia"
+    },
+    {
+      "id": "oscuro",
+      "name": "Oscuro",
+      "description": "Diapositivas oscuras.",
+      "downloadUrl": "https://raw.githubusercontent.com/consultora-grada/salmia-releases/main/shared/themes/presentation/Oscuro.salmia"
+    }
+  ],
+  "songbook": [],
+  "worship_script": [],
+  "worship_order": [],
+  "songs": [],
+  "bibles": [],
+  "images": [],
+  "videos": [],
+  "liturgies": []
+}
