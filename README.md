@@ -14,21 +14,28 @@ People who already have Salmia then get the update from the app. They do not nee
 
 ## Theme catalog
 
-`[shared/themes/index.json](shared/themes/index.json)` is the catalog Salmia reads from the `main` branch:
+`shared/themes/index.json` is the catalog Salmia reads from the `main` branch:
 
 `https://raw.githubusercontent.com/consultora-grada/salmia-releases/main/shared/themes/index.json`
 
-Each entry has an `id`, `name`, `description`, and `downloadUrl`. The URL points at a `.salmia` package in `shared/themes/` (today: Luminoso, Luminoso saturado, and Oscuro). On first launch, if no theme has been downloaded yet, Salmia lists those entries and imports the ones the person selects. Import uses the same path as importing a `.salmia` file from the Design window.
+The catalog has four lists, one per design surface. Each entry has an `id`, `name`, `description`, and `downloadUrl`. The URL points at a `.salmia` file in that surface's folder:
+
+- `presentation/` — slide themes
+- `songbook/` — songbook PDF themes
+- `worship_script/` — worship script themes
+- `worship_order/` — order of worship themes
+
+On first launch, if the library still has only its initial themes, Salmia lists the entries that exist and imports the ones the person selects. An empty list is omitted. Import uses the same path as importing a `.salmia` file from the Design window.
 
 ## Contributing a theme
 
 Anyone can offer a theme. Write access to this repository is not required.
 
-1. In Salmia, open Design, select the theme, and export it. That writes a `.salmia` file with the theme and the images it uses. Export only the theme, not a liturgy or a song.
-2. Fork this repository and add that file under `shared/themes/`, with a short file name such as `my-theme.salmia`.
-3. Add an entry to `shared/themes/index.json`: `id`, `name`, `description`, and `downloadUrl`. The URL must be the raw address on this repository’s `main` branch, not on the fork:
+1. In Salmia, open Design, select the surface (slides, songbook, script, or order of worship), select the theme, and export it. That writes a `.salmia` file with that theme and the images it uses. Export only the theme, not a liturgy or a song.
+2. Fork this repository and add that file under the matching folder in `shared/themes/`, with a short file name such as `my-theme.salmia`.
+3. Add an entry to the matching list in `shared/themes/index.json`: `id`, `name`, `description`, and `downloadUrl`. The URL must be the raw address on this repository’s `main` branch, not on the fork:
 
-   `https://raw.githubusercontent.com/consultora-grada/salmia-releases/main/shared/themes/my-theme.salmia`
+   `https://raw.githubusercontent.com/consultora-grada/salmia-releases/main/shared/themes/presentation/my-theme.salmia`
 
 4. Open a pull request. After it is merged, Salmia lists the theme on first launch and imports it the same way as the themes already in the catalog.
 
