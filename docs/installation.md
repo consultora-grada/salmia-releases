@@ -121,4 +121,10 @@ sed -i 's|^Exec=.*|Exec=salmia-nvidia|' ~/.local/share/applications/Salmia.deskt
 
 On Fedora, change the `export` line to `export __NV_DISABLE_EXPLICIT_SYNC=1`. Log out or wait a moment, then open Salmia from the menu.
 
-**A video does not move.** Close Salmia and open it again. If the window stays blank on Wayland and the machine does not use the proprietary NVIDIA driver, download the AppImage from the latest release again.
+**A video does not move, or the picture is black.** On Ubuntu or Debian, install the software decoder and open Salmia again:
+
+```bash
+sudo apt install gstreamer1.0-libav
+```
+
+If the window stays blank on Wayland and the machine does not use the proprietary NVIDIA driver, download the AppImage from the latest release again.
